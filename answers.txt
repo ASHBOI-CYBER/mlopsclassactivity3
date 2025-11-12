@@ -1,0 +1,7 @@
+1. **CI/CD improves collaboration in ML teams** by automating testing, model validation, and deployment, ensuring that code, data, and models from different team members integrate smoothly. It reduces manual errors, provides version control, and allows faster, consistent updates.
+
+2. **If the evaluation score is below the defined threshold**, the pipeline automatically stops deployment and triggers alerts. The model may be flagged for retraining or sent back for review, ensuring only high-performing models reach production.
+
+3. **Retraining or drift detection** can be integrated by adding monitoring components that track model performance and data distribution in production. If drift or performance degradation is detected, the pipeline can trigger automated retraining or a new CI/CD run.
+
+4. **To deploy this workflow to production**, containerize the pipeline (e.g., with Docker), use an orchestrator like **Kubernetes** for scaling, set up **CI/CD tools** (Jenkins, GitHub Actions, GitLab CI), and connect to cloud services like **AWS S3 (data), SageMaker (training), and EKS (deployment)** for full automation.
